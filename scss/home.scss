@@ -1,0 +1,48 @@
+.site-container{
+    padding: 40px;
+    .btn{
+        @include btn();
+    }
+    ul{
+        // margin: 20px 40px;
+        // display: flex;
+    }
+
+    #app{
+        padding: 20px 0;
+    }
+    
+    li{
+        cursor: pointer;
+        padding: 20px;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        background-color: beige;
+        input{
+            margin: 0 20px;
+        }
+    }
+    
+    li:nth-child(odd){
+        background-color: lightblue;
+    }
+
+    li.strike{
+        text-decoration: line-through;
+    }
+
+    .right{
+        position: absolute;
+        right: 60px;
+    }
+
+    .delete{
+        cursor: pointer;
+        position: absolute;
+        right: 60px;
+    }
+    .delete:hover{
+        color: red;
+    }
+}
